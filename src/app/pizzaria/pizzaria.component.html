@@ -1,0 +1,44 @@
+<div class="container">
+  <span class="header">Pizzaria Horácio</span>
+
+  <div id="container_demo">
+
+    <div id="wrapper">
+
+      <div id="comanda">
+        <h1> Comanda</h1>
+        <form [formGroup]="formComanda" (ngSubmit)="onProcessar()">
+          <p>
+            <label>Chopp</label>
+            <input type="text" name="inChopp" formControlName="inChopp"/>
+          </p>
+
+          <p>
+              <label>Pizza</label>
+              <input type="text" name="inPizza" formControlName="inPizza"/>
+          </p>
+
+          <p>
+              <label>Recheio</label>
+              <input type="text" name="inRecheio" formControlName="inRecheio"/>
+          </p>
+
+          <p>
+              <label>Pessoas</label>
+              <input type="text" name="inPessoas" formControlName="inPessoas"/>
+            </p>
+
+          <p class="keepcomanda">
+            <input type="checkbox" name="TaxaServico" formControlName="TaxaServico"/>
+            <label>Taxa de Serviço</label>
+          </p>
+
+          <p class="comanda button">
+            <input type="submit" value="Calcular" />
+          </p>
+        </form>
+        <p class='about'>Murillo Pereira e Igor Quintanilha</p>
+      </div>
+    </div>
+  </div>
+</div>
